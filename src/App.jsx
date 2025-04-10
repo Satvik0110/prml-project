@@ -43,7 +43,7 @@ function App() {
         sklearn: { accuracy: 99.07, precision: 98.55, recall: 99.11, f1Score: 98.83 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 74.34, precision: 92.60, recall: 59.70, f1Score: 72.60 },
+        custom: { accuracy: 72.26, precision: 92.63, recall: 55.70, f1Score: 69.57 },
         sklearn: { accuracy: 76.19, precision: 92.25, recall: 63.51, f1Score: 75.23 }
       }
     },
@@ -107,7 +107,7 @@ function App() {
       description: 'Classification based on proximity to known data points',
       icon: '📊',
       color: '#4299e1',
-      colabLink: 'https://colab.research.google.com/drive/16ZP-qLP9Gux0VhNHYVqDwppbHd4qRD6p?usp=sharing'
+      colabLink: 'https://colab.research.google.com/drive/1mBoUunSIVIC1syGF94s6SK6lICDiNjXY?usp=sharing'
     },
     {
       id: 'decisionTree',
@@ -123,7 +123,7 @@ function App() {
       description: 'Statistical model for binary classification',
       icon: '📈',
       color: '#ed8936',
-      colabLink: 'https://colab.research.google.com/drive/1Zg-5PoofdAokkJBJqqmMqp0ddkeKq694?usp=sharing'
+      colabLink: 'https://colab.research.google.com/drive/1N3kKUM9vxdUP1eA24GC1mPfeH6x8mkt2?usp=sharing'
     },
     {
       id: 'svm',

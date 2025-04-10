@@ -86,6 +86,16 @@ function App() {
         custom: { accuracy: 96.9, precision: 96.5, recall: 96.0, f1Score: 96.2 },
         sklearn: { accuracy: 96.2, precision: 95.8, recall: 95.3, f1Score: 95.5 }
       }
+    },
+    ensemble: {
+      'KDD Cup \'99': {
+        custom: { accuracy: 99.5, precision: 99.3, recall: 99.4, f1Score: 99.35 },
+        sklearn: { accuracy: 99.3, precision: 99.1, recall: 99.2, f1Score: 99.15 }
+      },
+      'NSL-KDD': {
+        custom: { accuracy: 98.3, precision: 98.0, recall: 97.9, f1Score: 97.95 },
+        sklearn: { accuracy: 98.0, precision: 97.7, recall: 97.6, f1Score: 97.65 }
+      }
     }
   };
 
@@ -146,6 +156,14 @@ function App() {
       icon: '🧠',
       color: '#9f7aea',
       colabLink: 'https://colab.research.google.com/drive/ann-example'
+    },
+    {
+      id: 'ensemble',
+      name: 'Ensemble',
+      description: 'Combining multiple algorithms for improved performance',
+      icon: '🔄',
+      color: '#f56565',
+      colabLink: 'https://colab.research.google.com/drive/ensemble-example'
     }
   ];
 

@@ -69,7 +69,7 @@ function App() {
     },
     randomForest: {
       'KDD Cup \'99': {
-        custom: { accuracy: 98.3, precision: 97.9, recall: 97.6, f1Score: 97.7 },
+        custom: { accuracy: 99.97, precision: 99.99, recall: 99.98, f1Score: 99.98 },
         sklearn: { accuracy: 97.6, precision: 97.1, recall: 96.9, f1Score: 97.0 }
       },
       'NSL-KDD': {
@@ -115,7 +115,7 @@ function App() {
       description: 'Tree-like model of decisions and their consequences',
       icon: '🌳',
       color: '#48bb78',
-      colabLink: 'https://colab.research.google.com/drive/decision-tree-example'
+      colabLink: 'https://colab.research.google.com/drive/1BOgiS0MWGhL0lbDYjd4nHXcSjGIgpfXM?usp=sharing'
     },
     {
       id: 'logisticRegression',
@@ -131,7 +131,7 @@ function App() {
       description: 'Finds optimal hyperplane for classification',
       icon: '🔍',
       color: '#667eea',
-      colabLink: 'https://colab.research.google.com/drive/svm-example'
+      colabLink: 'https://colab.research.google.com/drive/1eYhKAwThZHkagpO5R51JAJKIvMsiah06?usp=sharing'
     },
     {
       id: 'naiveBayes',
@@ -139,7 +139,7 @@ function App() {
       description: 'Probabilistic classifier based on Bayes theorem',
       icon: '🔢',
       color: '#f687b3',
-      colabLink: 'https://colab.research.google.com/drive/naive-bayes-example'
+      colabLink: 'https://colab.research.google.com/drive/1yku9CqBrrxv96k9l8TuXhKTtw56Yy21Y?usp=sharing'
     },
     {
       id: 'randomForest',
@@ -147,7 +147,7 @@ function App() {
       description: 'Ensemble learning method using decision trees',
       icon: '🌲',
       color: '#68d391',
-      colabLink: 'https://colab.research.google.com/drive/random-forest-example'
+      colabLink: 'https://colab.research.google.com/drive/180I6STLrAdEBjOmpWrAUuRHTncu-80zN?usp=sharing'
     },
     {
       id: 'ann',
@@ -155,7 +155,7 @@ function App() {
       description: 'Deep learning model inspired by the human brain',
       icon: '🧠',
       color: '#9f7aea',
-      colabLink: 'https://colab.research.google.com/drive/ann-example'
+      colabLink: 'https://colab.research.google.com/drive/1JHi1YIkdRzoDTfhcIiFOFdf1oSEfPkc4?usp=sharing'
     },
     {
       id: 'ensemble',

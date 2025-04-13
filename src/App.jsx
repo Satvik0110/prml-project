@@ -78,12 +78,12 @@ function App() {
     },
     ann: {
       'KDD Cup \'99': {
-        custom: { accuracy: 97.8, precision: 97.4, recall: 96.9, f1Score: 97.1 },
-        sklearn: { accuracy: 97.1, precision: 96.7, recall: 96.2, f1Score: 96.4 }
+        custom: { accuracy: '-', precision: '-', recall: '-', f1Score: '-' },
+        pytorch: { accuracy: 99.70, precision: 99.76, recall: 99.50, f1Score: 99.63 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 96.9, precision: 96.5, recall: 96.0, f1Score: 96.2 },
-        sklearn: { accuracy: 96.2, precision: 95.8, recall: 95.3, f1Score: 95.5 }
+        custom: { accuracy: '-', precision: '-', recall: '-', f1Score: '-' },
+        pytorch: { accuracy: 79.98, precision: 97.5, recall: 66.53, f1Score: 79.09 }
       }
     },
     XGBoost: {

@@ -14,7 +14,7 @@ function App() {
     }));
   };
 
-  // Sample metrics data (would come from your backend in a real application)
+ 
   const metricsData = {
     knn: {
       'KDD Cup \'99': {
@@ -28,12 +28,12 @@ function App() {
     },
     decisionTree: {
       'KDD Cup \'99': {
-        custom: { accuracy: 95.6, precision: 94.7, recall: 96.2, f1Score: 95.4 },
-        sklearn: { accuracy: 94.9, precision: 94.1, recall: 95.4, f1Score: 94.7 }
+        custom: { accuracy: 99.42, precision: 99.87, recall: 96.85, f1Score: 99.26 },
+        sklearn: { accuracy: 99.89, precision: 99.89, recall: 99.84, f1Score: 99.87 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 94.8, precision: 93.9, recall: 95.3, f1Score: 94.6 },
-        sklearn: { accuracy: 94.2, precision: 93.1, recall: 94.7, f1Score: 93.9 }
+        custom: { accuracy: 81.46, precision: 96.57, recall: 69.92, f1Score: 81.11 },
+        sklearn: { accuracy: 82.23, precision: 96.85, recall: 71.09, f1Score: 81.99 }
       }
     },
     logisticRegression: {
@@ -42,38 +42,38 @@ function App() {
         sklearn: { accuracy: 99.07, precision: 98.55, recall: 99.11, f1Score: 98.83 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 72.26, precision: 92.63, recall: 55.70, f1Score: 69.57 },
+        custom: { accuracy: 72.26, precision: 92.60, recall: 59.65, f1Score: 72.56 },
         sklearn: { accuracy: 76.19, precision: 92.25, recall: 63.51, f1Score: 75.23 }
       }
     },
     svm: {
       'KDD Cup \'99': {
-        custom: { accuracy: 93.8, precision: 93.1, recall: 92.5, f1Score: 92.8 },
-        sklearn: { accuracy: 93.0, precision: 92.4, recall: 91.8, f1Score: 92.1 }
+        custom: { accuracy: 98.91, precision: 99.19, recall: 98.05, f1Score: 98.62 },
+        sklearn: { accuracy: 99.74, precision: 99.75, recall: 99.59, f1Score: 99.67 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 92.7, precision: 92.0, recall: 91.4, f1Score: 91.7 },
-        sklearn: { accuracy: 92.0, precision: 91.3, recall: 90.7, f1Score: 91.0 }
+        custom: { accuracy: 90.09, precision: 92.44, recall: 89.94, f1Score: 91.17 },
+        sklearn: { accuracy: 85.39, precision: 96.49, recall: 77.14, f1Score: 85.74 }
       }
     },
     naiveBayes: {
       'KDD Cup \'99': {
-        custom: { accuracy: 89.5, precision: 88.9, recall: 87.4, f1Score: 88.1 },
-        sklearn: { accuracy: 88.9, precision: 88.2, recall: 86.7, f1Score: 87.4 }
+        custom: { accuracy: 97.37, precision: 97.81, recall: 95.52, f1Score: 96.65 },
+        sklearn: { accuracy: 97.37, precision:98.83, recall: 95.04, f1Score: 96.65 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 88.6, precision: 87.7, recall: 86.3, f1Score: 87.0 },
-        sklearn: { accuracy: 87.9, precision: 87.0, recall: 85.8, f1Score: 86.4 }
+        custom: { accuracy: 81.11, precision: 99.51, recall: 61.07, f1Score: 75.69 },
+        sklearn: { accuracy: 88.68, precision:97.98, recall: 78.09, f1Score: 86.91 }
       }
     },
     randomForest: {
       'KDD Cup \'99': {
-        custom: { accuracy: 99.97, precision: 99.99, recall: 99.98, f1Score: 99.98 },
-        sklearn: { accuracy: 97.6, precision: 97.1, recall: 96.9, f1Score: 97.0 }
+        custom: { accuracy: 99.99, precision: 99.99, recall: 99.98, f1Score: 99.98 },
+        sklearn: { ccuracy: 99.99, precision: 99.99, recall: 99.98, f1Score: 99.98 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 97.5, precision: 97.1, recall: 96.8, f1Score: 96.9 },
-        sklearn: { accuracy: 96.8, precision: 96.4, recall: 96.1, f1Score: 96.2 }
+        custom: { accuracy: 78.16, precision: 96.13, recall: 64.22, f1Score: 77.00 },
+        sklearn: { accuracy: 78.57, precision: 98.86, recall: 64.44, f1Score: 77.39 }
       }
     },
     ann: {
@@ -88,12 +88,12 @@ function App() {
     },
     XGBoost: {
       'KDD Cup \'99': {
-        custom: { accuracy: 99.5, precision: 99.3, recall: 99.4, f1Score: 99.35 },
-        sklearn: { accuracy: 99.3, precision: 99.1, recall: 99.2, f1Score: 99.15 }
+        custom: { accuracy: '-', precision: '-', recall: '-', f1Score: '-' },
+        sklearn: { accuracy: 99.94, precision: 99.97, recall: 99.89, f1Score: 99.93 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 98.3, precision: 98.0, recall: 97.9, f1Score: 97.95 },
-        sklearn: { accuracy: 98.0, precision: 97.7, recall: 97.6, f1Score: 97.65 }
+        custom: { accuracy: '-', precision: '-', recall: '-', f1Score: '-'},
+        sklearn: { accuracy: 80.74, precision: 96.89, recall: 68.36, f1Score: 80.16 }
       }
     }
   };
@@ -109,6 +109,14 @@ function App() {
       colabLink: 'https://colab.research.google.com/drive/1eYhKAwThZHkagpO5R51JAJKIvMsiah06?usp=sharing'
     },
     {
+      id: 'naiveBayes',
+      name: 'Naive Bayes',
+      description: 'Probabilistic classifier based on Bayes theorem',
+      icon: '🔢',
+      color: '#f687b3',
+      colabLink: 'https://colab.research.google.com/drive/1yku9CqBrrxv96k9l8TuXhKTtw56Yy21Y?usp=sharing'
+    },
+    {
       id: 'decisionTree',
       name: 'Decision Tree',
       description: 'Tree-like model of decisions and their consequences',
@@ -122,7 +130,7 @@ function App() {
       description: 'Ensemble learning method using decision trees',
       icon: '🌲',
       color: '#f56565',
-      colabLink: 'https://colab.research.google.com/drive/xgboost-example'
+      colabLink: 'https://colab.research.google.com/drive/1a2Cwb1uRFtbH-hm3un1iH93DTVqmv-8N?usp=sharing'
     },
     {
       id: 'ann',
@@ -131,14 +139,6 @@ function App() {
       icon: '🧠',
       color: '#9f7aea',
       colabLink: 'https://colab.research.google.com/drive/1JHi1YIkdRzoDTfhcIiFOFdf1oSEfPkc4?usp=sharing'
-    },
-    {
-      id: 'naiveBayes',
-      name: 'Naive Bayes',
-      description: 'Probabilistic classifier based on Bayes theorem',
-      icon: '🔢',
-      color: '#f687b3',
-      colabLink: 'https://colab.research.google.com/drive/1yku9CqBrrxv96k9l8TuXhKTtw56Yy21Y?usp=sharing'
     },
     {
       id: 'knn',

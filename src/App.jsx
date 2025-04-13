@@ -87,7 +87,7 @@ function App() {
         sklearn: { accuracy: 96.2, precision: 95.8, recall: 95.3, f1Score: 95.5 }
       }
     },
-    ensemble: {
+    XGBoost: {
       'KDD Cup \'99': {
         custom: { accuracy: 99.5, precision: 99.3, recall: 99.4, f1Score: 99.35 },
         sklearn: { accuracy: 99.3, precision: 99.1, recall: 99.2, f1Score: 99.15 }
@@ -102,12 +102,12 @@ function App() {
   // Algorithm card data
   const algorithms = [
     {
-      id: 'knn',
-      name: 'K-Nearest Neighbors',
-      description: 'Classification based on proximity to known data points',
-      icon: '📊',
-      color: '#4299e1',
-      colabLink: 'https://colab.research.google.com/drive/1mBoUunSIVIC1syGF94s6SK6lICDiNjXY?usp=sharing'
+      id: 'svm',
+      name: 'Support Vector Machine',
+      description: 'Finds optimal hyperplane for classification and is our best model',
+      icon: '🔍',
+      color: '#667eea',
+      colabLink: 'https://colab.research.google.com/drive/1eYhKAwThZHkagpO5R51JAJKIvMsiah06?usp=sharing'
     },
     {
       id: 'decisionTree',
@@ -118,36 +118,12 @@ function App() {
       colabLink: 'https://colab.research.google.com/drive/1BOgiS0MWGhL0lbDYjd4nHXcSjGIgpfXM?usp=sharing'
     },
     {
-      id: 'logisticRegression',
-      name: 'Logistic Regression',
-      description: 'Statistical model for binary classification',
-      icon: '📈',
-      color: '#ed8936',
-      colabLink: 'https://colab.research.google.com/drive/1N3kKUM9vxdUP1eA24GC1mPfeH6x8mkt2?usp=sharing'
-    },
-    {
-      id: 'svm',
-      name: 'Support Vector Machine',
-      description: 'Finds optimal hyperplane for classification',
-      icon: '🔍',
-      color: '#667eea',
-      colabLink: 'https://colab.research.google.com/drive/1eYhKAwThZHkagpO5R51JAJKIvMsiah06?usp=sharing'
-    },
-    {
-      id: 'naiveBayes',
-      name: 'Naive Bayes',
-      description: 'Probabilistic classifier based on Bayes theorem',
-      icon: '🔢',
-      color: '#f687b3',
-      colabLink: 'https://colab.research.google.com/drive/1yku9CqBrrxv96k9l8TuXhKTtw56Yy21Y?usp=sharing'
-    },
-    {
-      id: 'randomForest',
-      name: 'Random Forest',
+      id: 'XGBoost',
+      name: 'XGboost',
       description: 'Ensemble learning method using decision trees',
-      icon: '🌲',
-      color: '#68d391',
-      colabLink: 'https://colab.research.google.com/drive/180I6STLrAdEBjOmpWrAUuRHTncu-80zN?usp=sharing'
+      icon: '🔄',
+      color: '#f56565',
+      colabLink: 'https://colab.research.google.com/drive/xgboost-example'
     },
     {
       id: 'ann',
@@ -158,12 +134,36 @@ function App() {
       colabLink: 'https://colab.research.google.com/drive/1JHi1YIkdRzoDTfhcIiFOFdf1oSEfPkc4?usp=sharing'
     },
     {
-      id: 'ensemble',
-      name: 'Ensemble',
-      description: 'Combining multiple algorithms for improved performance',
-      icon: '🔄',
-      color: '#f56565',
-      colabLink: 'https://colab.research.google.com/drive/ensemble-example'
+      id: 'naiveBayes',
+      name: 'Naive Bayes',
+      description: 'Probabilistic classifier based on Bayes theorem',
+      icon: '🔢',
+      color: '#f687b3',
+      colabLink: 'https://colab.research.google.com/drive/1yku9CqBrrxv96k9l8TuXhKTtw56Yy21Y?usp=sharing'
+    },
+    {
+      id: 'knn',
+      name: 'K-Nearest Neighbors',
+      description: 'Classification based on proximity to known data points',
+      icon: '📊',
+      color: '#4299e1',
+      colabLink: 'https://colab.research.google.com/drive/1mBoUunSIVIC1syGF94s6SK6lICDiNjXY?usp=sharing'
+    },
+    {
+      id: 'randomForest',
+      name: 'Random Forest',
+      description: 'Ensemble learning method using decision trees',
+      icon: '🌲',
+      color: '#68d391',
+      colabLink: 'https://colab.research.google.com/drive/180I6STLrAdEBjOmpWrAUuRHTncu-80zN?usp=sharing'
+    },
+    {
+      id: 'logisticRegression',
+      name: 'Logistic Regression',
+      description: 'Statistical model for binary classification',
+      icon: '📈',
+      color: '#ed8936',
+      colabLink: 'https://colab.research.google.com/drive/1N3kKUM9vxdUP1eA24GC1mPfeH6x8mkt2?usp=sharing'
     }
   ];
 

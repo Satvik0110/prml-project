@@ -65,7 +65,7 @@ body {
   gap: 1rem;
 }
 
-.colab-link, .github-link {
+.colab-link {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -81,17 +81,14 @@ body {
   background-color: #F9AB00;
 }
 
-.github-link {
-  background-color: #24292e;
-}
 
-.colab-link:hover, .github-link:hover {
+
+.colab-link:hover{
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
 .link-icon {
-  margin-right: 0.5rem;
   display: flex;
   align-items: center;
 }

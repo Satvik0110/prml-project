@@ -1,7 +1,6 @@
 // App.jsx
 import React, { useState } from 'react';
 import './Dashboard.css';
-
 function App() {
   // State to track which algorithm and dataset combination is expanded
   const [expanded, setExpanded] = useState({});
@@ -121,7 +120,7 @@ function App() {
       id: 'XGBoost',
       name: 'XGboost',
       description: 'Ensemble learning method using decision trees',
-      icon: '🔄',
+      icon: '🌲',
       color: '#f56565',
       colabLink: 'https://colab.research.google.com/drive/xgboost-example'
     },
@@ -194,7 +193,7 @@ function App() {
         <header className="header">
           <div className="title-section">
             <h1>Network Intrusion Detection System</h1>
-            <p>Algorithm Performance Comparison Dashboard</p>
+            <p>Algorithm Performance Comparison Dashboard </p>
           </div>
         </header>
 
@@ -214,13 +213,9 @@ function App() {
                   <p>{algorithm.description}</p>
                   <a href={algorithm.colabLink} target="_blank" rel="noopener noreferrer" className="colab-link algorithm-colab-link">
                     <div className="link-icon">
-                      <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.11 15.39l-3.88-3.89 3.88-3.89c.39-.39.39-1.02 0-1.41a.9959.9959 0 00-1.41 0l-4.59 4.59c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .38-.39.39-1.03 0-1.42z" fill="#e8710a"/>
-                        <path d="M12.11 15.39l3.88-3.89-3.88-3.89c-.39-.39-.39-1.02 0-1.41a.9959.9959 0 011.41 0l4.59 4.59c.39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z" fill="#f9ab00"/>
-                        <path d="M16 6h-3c-.55 0-1-.45-1-1s.45-1 1-1h3c.55 0 1 .45 1 1s-.45 1-1 1zM16 20h-3c-.55 0-1-.45-1-1s.45-1 1-1h3c.55 0 1 .45 1 1s-.45 1-1 1z" fill="#e8710a"/>
-                      </svg>
+                      
                     </div>
-                    <span>Google Colab</span>
+                    <span>Open in Colab</span>
                   </a>
                 </div>
 

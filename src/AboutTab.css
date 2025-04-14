@@ -209,3 +209,7 @@
 .detailed-comparison-content h2 {
   margin-bottom: 20px;
 }
+
+.detailed-comparison-content > p {
+  margin-bottom: 20px;
+}

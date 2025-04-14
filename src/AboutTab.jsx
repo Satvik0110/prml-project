@@ -417,27 +417,7 @@ function AboutTab({ metricsData, algorithms }) {
                                 )}
                               </div>
                               
-                              <div className="algorithm-insights">
-                                <h4>Performance Insights</h4>
-                                <p>
-                                  {algorithm.id === 'svm' && dataset === 'NSL-KDD' ? 
-                                    'SVM achieves the best overall performance on this dataset, demonstrating strong generalization capabilities for the more challenging NSL-KDD data.' :
-                                    algorithm.id === 'randomForest' && dataset === 'KDD Cup \'99' ?
-                                    'Random Forest excels on the KDD Cup \'99 dataset with nearly perfect classification performance, showing the power of ensemble methods for this task.' :
-                                    algorithm.id === 'naiveBayes' ?
-                                    'Naive Bayes shows good precision but lower recall, suggesting it might be more conservative in classifying network traffic as malicious.' :
-                                    algorithm.id === 'decisionTree' ?
-                                    'Decision Trees provide a good balance of performance and interpretability, making them suitable for scenarios where model explanation is important.' :
-                                    algorithm.id === 'knn' ?
-                                    'KNN performance is heavily dependent on feature scaling and shows strong results on well-distributed data.' :
-                                    algorithm.id === 'ann' ?
-                                    'The neural network approach demonstrates competitive performance while offering flexibility for handling complex, non-linear relationships in the data.' :
-                                    algorithm.id === 'XGBoost' ?
-                                    'XGBoost provides state-of-the-art performance through gradient boosting, especially effective on the well-structured KDD Cup dataset.' :
-                                    'Logistic Regression offers a simple but effective baseline, with performance suggesting that many intrusion patterns can be captured by linear models.'
-                                  }
-                                </p>
-                              </div>
+                              
                             </div>
                           )}
                         </div>

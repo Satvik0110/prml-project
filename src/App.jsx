@@ -29,11 +29,11 @@ function App() {
     },
     logisticRegression: {
       'KDD Cup \'99': {
-        custom: { accuracy: 99.00, precision: 98.40, recall: 99.10, f1Score: 98.75 },
+        custom: { accuracy: 99.00, precision: 99.10, recall: 98.40, f1Score: 98.75 },
         sklearn: { accuracy: 99.07, precision: 98.55, recall: 99.11, f1Score: 98.83 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 72.26, precision: 92.60, recall: 59.65, f1Score: 72.56 },
+        custom: { accuracy: 74.32, precision: 92.60, recall: 59.65, f1Score: 72.56 },
         sklearn: { accuracy: 76.19, precision: 92.25, recall: 63.51, f1Score: 75.23 }
       }
     },
@@ -50,7 +50,7 @@ function App() {
     naiveBayes: {
       'KDD Cup \'99': {
         custom: { accuracy: 97.37, precision: 97.81, recall: 95.52, f1Score: 96.65 },
-        sklearn: { accuracy: 97.37, precision: 98.83, recall: 95.04, f1Score: 96.65 }
+        sklearn: { accuracy: 97.37, precision: 98.33, recall: 95.04, f1Score: 96.65 }
       },
       'NSL-KDD': {
         custom: { accuracy: 81.11, precision: 99.51, recall: 61.07, f1Score: 75.69 },
@@ -59,21 +59,21 @@ function App() {
     },
     randomForest: {
       'KDD Cup \'99': {
-        custom: { accuracy: 99.9, precision: 99.99, recall: 99.98, f1Score: 99.98 },
+        custom: { accuracy: 99.99, precision: 99.99, recall: 99.98, f1Score: 99.98 },
         sklearn: { accuracy: 99.99, precision: 99.99, recall: 99.98, f1Score: 99.98 }
       },
       'NSL-KDD': {
         custom: { accuracy: 78.16, precision: 96.13, recall: 64.22, f1Score: 77.00 },
-        sklearn: { accuracy: 78.57, precision: 98.86, recall: 64.44, f1Score: 77.39 }
+        sklearn: { accuracy: 78.57, precision: 96.86, recall: 64.44, f1Score: 77.39 }
       }
     },
     ann: {
       'KDD Cup \'99': {
-        custom: { accuracy: 99.65, precision: 99.70, recall: 99.45, f1Score: 99.58 },
+        custom: { accuracy: 99.70, precision: 99.76, recall: 99.50, f1Score: 99.63 },
         sklearn: { accuracy: '-', precision: '-', recall: '-', f1Score: '-' }
       },
       'NSL-KDD': {
-        custom: { accuracy: 78.90, precision: 97.2, recall: 65.43, f1Score: 78.19 },
+        custom: { accuracy: 79.98, precision: 97.5, recall: 66.53, f1Score: 79.09 },
         sklearn: { accuracy: '-', precision: '-', recall: '-', f1Score: '-' }
       }
     },

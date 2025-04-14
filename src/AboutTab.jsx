@@ -317,7 +317,6 @@ function AboutTab({ metricsData, algorithms }) {
                 <li>Random Forest and XGBoost demonstrate the highest F1 scores on the KDD Cup '99 dataset, approaching 99.98%</li>
                 <li>Support Vector Machine (SVM) performs best on the NSL-KDD dataset with an F1 score of 91.17% (custom implementation)</li>
                 <li>The NSL-KDD dataset presents a more challenging classification task overall, with consistently lower performance across all algorithms</li>
-                <li>Decision Trees and ensemble methods (Random Forest, XGBoost) show strong performance across both datasets</li>
                 <li>For most algorithms, the scikit-learn implementations outperform the custom implementations, though the performance gap is small in many cases</li>
               </ul>
           

@@ -97,7 +97,7 @@ function App() {
       description: 'Finds optimal hyperplane for classification and is our best model',
       icon: '🔍',
       color: '#667eea',
-      colabLink: 'https://colab.research.google.com/drive/1eYhKAwThZHkagpO5R51JAJKIvMsiah06?usp=sharing'
+      colabLink: 'https://colab.research.google.com/drive/1y0zL6br9wfHWVm-JIoafWVop9AbZJfuC?usp=sharing'
     },
     {
       id: 'naiveBayes',

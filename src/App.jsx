@@ -43,7 +43,7 @@ function App() {
         sklearn: { accuracy: 99.74, precision: 99.75, recall: 99.59, f1Score: 99.67 }
       },
       'NSL-KDD': {
-        custom: { accuracy: 90.09, precision: 92.44, recall: 89.94, f1Score: 91.17 },
+        custom: { accuracy: 90.11, precision: 92.42, recall: 90.01, f1Score: 91.20 },
         sklearn: { accuracy: 85.39, precision: 96.49, recall: 77.14, f1Score: 85.74 }
       }
     },
